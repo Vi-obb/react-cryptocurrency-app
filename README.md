@@ -10,9 +10,9 @@ This is a single page web app built with React and Tailwind CSS that displays th
 
 ### Packages Installed
 
-- React icons
-- Dotenv
-- Axios
+- React icons `npm i react-icons`
+- Dotenv `npm i dotenv `
+- Axios ` npm i axios`
 
 ### Custom Fonts
 
