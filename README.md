@@ -8,6 +8,12 @@ This is a single page web app built with React and Tailwind CSS that displays th
 
 ## Project Details
 
+### Packages Installed
+
+- React icons
+- Dotenv
+- Axios
+
 ### Custom Fonts
 
 - Poppins, Sans-serif
