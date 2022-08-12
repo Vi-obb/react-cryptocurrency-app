@@ -12,10 +12,14 @@
 **/
 import React from 'react'
 
+const style = {
+	wrapper: `text-cabaret font-karla`,
+}
+
 const Navbar = () => {
 	return (
-		<div className='text-green-100'>
-			Navbar</div>
+		<div className={style.wrapper}>
+			Asiedu</div>
 	)
 }
 
