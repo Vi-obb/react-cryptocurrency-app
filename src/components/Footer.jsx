@@ -15,7 +15,7 @@ import React from 'react'
 const Footer = () => {
 	return (
 		<div
-			className='text-red-100'>Footer</div>
+			className='text-red-100'>Footer by Asiedu</div>
 	)
 }
 
