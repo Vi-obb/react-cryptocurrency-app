@@ -10,7 +10,8 @@
     * - Author          : Michael
     * - Modification    : 
 **/
-import Body from "./components/Body/Body"
+import Headline from "./components/Body/Headline"
+
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 
@@ -20,7 +21,7 @@ function App() {
 
     <>
       <Navbar />
-      <Body />
+      <Headline />
       <Footer />
     </>
 
