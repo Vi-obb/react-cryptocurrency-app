@@ -10,16 +10,18 @@
     * - Author          : Michael
     * - Modification    : 
 **/
-
+import Body from "./components/Body/Body"
+import Footer from "./components/Footer"
+import Navbar from "./components/Navbar"
 
 function App() {
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </div>
+    <>
+      <Navbar />
+      <Body />
+      <Footer />
+    </>
 
   )
 }
