@@ -17,11 +17,25 @@ import Navbar from "./components/Navbar"
 function App() {
 
   return (
+    // <<<<<<< HEAD
     <>
       <Navbar />
       <Body />
       <Footer />
     </>
+    // =======
+    //     <div>
+    //       <h1 className="text-3xl font-bold underline">
+    //         Hello world!!!
+    //       </h1>
+    //       <p className="text-red-700">
+    //         Yo Mike! We about to get this bread!
+    //       </p>
+    //       <p  className="text-red-700">
+    //         We should do this more often. What do you say?
+    //       </p>
+    //     </div>
+    // >>>>>>> 7951f94f4eeb004466756af6509675484f7b9d59
 
   )
 }
