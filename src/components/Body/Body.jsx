@@ -17,6 +17,7 @@ const Body = () => {
 	return (
 		<div>
 			<Crypto />
+			Body by Asiedu
 		</div>
 	)
 }
