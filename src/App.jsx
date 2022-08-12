@@ -17,8 +17,14 @@ function App() {
   return (
     <div>
       <h1 className="text-3xl font-bold underline">
-        Hello world!
+        Hello world!!!
       </h1>
+      <p className="text-red-700">
+        Yo Mike! We about to get this bread!
+      </p>
+      <p  className="text-red-700">
+        We should do this more often. What do you say?
+      </p>
     </div>
 
   )
