@@ -14,7 +14,7 @@ import React from 'react'
 
 const Crypto = () => {
 	return (
-		<div className='text-yellow-500'>Crypto</div>
+		<div className='text-yellow-500'>Cryptocurreny Component</div>
 	)
 }
 
