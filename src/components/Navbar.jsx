@@ -19,7 +19,7 @@ const style = {
 	navLogo: `flex font-black`,
 	navItems: `flex justify-evenly items-center`,
 	navItem: `ml-3 mr-3 flex font-bold text-gray-700 cursor-pointer`,
-	navButton: `py-2 px-4 text-xs  bg-gray-700 focus:ring-white-500 focus:ring-offset-indigo-100 text-white w-full transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-1 focus:ring-offset-2 `
+	navBtn: `py-2 px-4 text-xs  bg-gray-700 focus:ring-white-500 focus:ring-offset-indigo-100 text-white w-full transition ease-in duration-200 text-center shadow-md focus:outline-none focus:ring-1 focus:ring-offset-2 `
 }
 
 const Navbar = () => {
@@ -45,7 +45,7 @@ const Navbar = () => {
 			</div>
 			<div>
 
-				<button type="button" class={style.navButton}>
+				<button type="button" class={style.navBtn}>
 					Log In
 				</button>
 
