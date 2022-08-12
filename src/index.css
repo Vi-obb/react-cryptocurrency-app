@@ -7,3 +7,9 @@
 body {
   font-family: Poppins, sans-serif;
 }
+
+.gradient {
+  background: -webkit-linear-gradient(#d44969, #a0e7e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
