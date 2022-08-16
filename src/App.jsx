@@ -11,18 +11,29 @@
     * - Modification    : 
 **/
 import Headline from "./components/Body/Headline"
-
+import SplitScreen from "./components/SplitScreen"
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
+import RightHandSide from "./components/RightSide"
+
+const LeftHandSide = () => {
+  return (
+    <>
+      <Navbar />
+      <Headline />
+      <Footer />
+    </>
+  )
+}
+
+
 
 function App() {
 
   return (
 
     <>
-      <Navbar />
-      <Headline />
-      <Footer />
+      <SplitScreen left={LeftHandSide} right={RightHandSide} />
     </>
 
 
