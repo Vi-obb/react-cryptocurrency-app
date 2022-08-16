@@ -30,7 +30,7 @@ const Headline = () => {
                 <p className={style.headlineTwo}> Crypto have existed for a long time, but never like this.</p>
             </div>
             <div className={style.headlineDiv}>
-                <input type="text" class={style.headlineInput} placeholder="Your@email.com" />
+                <input type="text" className={style.headlineInput} placeholder="Your@email.com" />
                 <button type="button" className={style.headlineBtn} >
                     Subscribe
                 </button>

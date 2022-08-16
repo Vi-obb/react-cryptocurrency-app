@@ -16,7 +16,10 @@ import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import RightHandSide from "./components/RightSide"
 
+
+
 const LeftHandSide = () => {
+
   return (
     <>
       <Navbar />
@@ -29,6 +32,7 @@ const LeftHandSide = () => {
 
 
 function App() {
+
 
   return (
 

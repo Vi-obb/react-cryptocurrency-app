@@ -45,7 +45,7 @@ const Navbar = () => {
 			</div>
 			<div className='flex justify-evenly'>
 
-				<button type="button" class={style.navBtnA}>
+				<button type="button" className={style.navBtnA}>
 					Log In
 				</button>
 
