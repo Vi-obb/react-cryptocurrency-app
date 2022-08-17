@@ -12,10 +12,15 @@
 **/
 import React from 'react'
 
+const style = {
+    wrapper: `text-red-300 flex justify-center`
+}
+
 const Footer = () => {
 	return (
-		<div
-			className='text-red-100'>Footer by Asiedu</div>
+		<div className={style.wrapper}>
+            Footer by Asiedu
+        </div>
 	)
 }
 
