@@ -15,6 +15,7 @@ import SplitScreen from "./components/SplitScreen"
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import RightHandSide from "./components/RightSide"
+import Content from "./components/Body/Content"
 
 
 
@@ -24,6 +25,7 @@ const LeftHandSide = () => {
     <>
       <Navbar />
       <Headline />
+      <Content />
       <Footer />
     </>
   )
