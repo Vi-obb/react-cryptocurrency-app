@@ -18,7 +18,7 @@ import { HiMenuAlt1 } from "react-icons/hi"
 const style = {
 	wrapper: `bg-gradient w-full flex flex-wrap text-sm justify-between items-center p-8`,
 	menu: `text-white text-2xl`,
-	menuDiv: `flex justify-end w-full mb-5`,
+	menuDiv: `flex justify-end w-full mb-3`,
 	priceDiv: `text-white`
 }
 const RightHandSide = () => {
