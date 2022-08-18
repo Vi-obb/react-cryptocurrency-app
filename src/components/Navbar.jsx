@@ -26,7 +26,7 @@ const Navbar = () => {
 	return (
 		<nav className={style.wrapper}>
 			<div className={style.navLogo}>
-				<RiCopyrightLine class="gradient text-xl mr-0.5" />
+				<RiCopyrightLine className="gradient text-xl mr-0.5" />
 				<p className='text-gray-800 font-black '> Coin  </p>
 				<p className='gradient text-cabaret'> X </p>
 			</div>
