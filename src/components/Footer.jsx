@@ -19,7 +19,7 @@ const style = {
 const Footer = () => {
 	return (
 		<div className={style.wrapper}>
-            Footer by Asiedu
+            Footer by 7heMagician
         </div>
 	)
 }
