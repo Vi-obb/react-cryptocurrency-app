@@ -12,6 +12,7 @@
  **/
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import useFetchCoins from "../../../hooks/useFetchCoins";
 import Crypto from "./Crypto";
 
 const style = {
@@ -22,23 +23,10 @@ const style = {
 };
 
 function Content() {
-  // fetch data from api
-  const [data, setData] = useState([]);
+  // all data fetching logic is done in the hooks/useFetchCoins.js file
+  // importing the data from the useFetchCoins.js file
 
-  useEffect(() => {
-    axios
-      .get(
-        `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false`
-      )
-      .then((res) => {
-        setData(res.data);
-        console.log(res.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-
+  const { data } = useFetchCoins();
   return (
     <div className={style.wrapper}>
       <table className="min-w-full leading-normal shadow-lg">
