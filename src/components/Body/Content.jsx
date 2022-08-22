@@ -23,8 +23,6 @@ const style = {
 };
 
 function Content() {
-  // fetch data from api
-  const [data, setData] = useState([]);
 
   // importing the data from the useFetchCoins.js file
   const { data } = useFetchCoins();
