@@ -11,7 +11,7 @@
  * - Modification    :
  **/
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import useFetchCoins from "../../../hooks/useFetchCoins";
 import Crypto from "./Crypto";
 
