@@ -1,3 +1,15 @@
+/**
+ * @description      :
+ * @author           : Michael
+ * @group            :
+ * @created          : 22/08/2022 - 16:46:00
+ *
+ * MODIFICATION LOG
+ * - Version         : 1.0.0
+ * - Date            : 22/08/2022
+ * - Author          : Michael
+ * - Modification    :
+ **/
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Crypto from "./Crypto";
@@ -54,7 +66,7 @@ function Content() {
               url={item.image}
               name={item.name}
               price={item.current_price}
-              change={item.price_change_24h}
+              change={item.price_change_percentage_24h}
               mktcap={item.market_cap}
             />
           ))}
