@@ -1,5 +1,18 @@
+/**
+ * @description      :
+ * @author           : Michael
+ * @group            :
+ * @created          : 22/08/2022 - 16:46:00
+ *
+ * MODIFICATION LOG
+ * - Version         : 1.0.0
+ * - Date            : 22/08/2022
+ * - Author          : Michael
+ * - Modification    :
+ **/
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import useFetchCoins from "../../../hooks/useFetchCoins";
 import Crypto from "./Crypto";
 
 const style = {
@@ -9,23 +22,12 @@ const style = {
   textFormat: `text-gray-900 whitespace-no-wrap`,
 };
 
-const Content = () => {
+function Content() {
   // fetch data from api
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get(
-        `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false`
-      )
-      .then((res) => {
-        setData(res.data);
-        console.log(res.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+  // importing the data from the useFetchCoins.js file
+  const { data } = useFetchCoins();
 
   return (
     <div className={style.wrapper}>
@@ -54,7 +56,7 @@ const Content = () => {
               url={item.image}
               name={item.name}
               price={item.current_price}
-              change={item.price_change_24h}
+              change={item.price_change_percentage_24h}
               mktcap={item.market_cap}
             />
           ))}
