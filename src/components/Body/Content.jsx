@@ -24,9 +24,10 @@ const style = {
 
 function Content() {
   // all data fetching logic is done in the hooks/useFetchCoins.js file
-  // importing the data from the useFetchCoins.js file
 
+  // importing the data from the useFetchCoins.js file
   const { data } = useFetchCoins();
+
   return (
     <div className={style.wrapper}>
       <table className="min-w-full leading-normal shadow-lg">
