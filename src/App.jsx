@@ -20,7 +20,6 @@ import Content from "./components/Body/Content";
 const LeftHandSide = () => {
   return (
     <>
-      <Navbar />
       <Headline />
       <Content />
     </>
@@ -30,6 +29,7 @@ const LeftHandSide = () => {
 function App() {
   return (
     <>
+      <Navbar />
       <SplitScreen left={LeftHandSide} right={RightHandSide} />
       <Footer />
     </>
