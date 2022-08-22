@@ -19,32 +19,32 @@ const style = {
 
 const Footer = () => {
   return (
-    <footer class={style.footer}>
-      <span class="text-sm text-black text-center">
+    <footer className={style.footer}>
+      <span className="text-sm text-black text-center">
         © 2022{" "}
-        <a href="https://github.com/DevBros-Projects" class="hover:underline">
+        <a href="https://github.com/DevBros-Projects" className="hover:underline">
           DevBros
         </a>
         . All Rights Reserved.
       </span>
-      <ul class={style.links}>
+      <ul className={style.links}>
         <li>
-          <a href="#" class="mr-4 hover:underline md:mr-6 ">
+          <a href="#" className="mr-4 hover:underline md:mr-6 ">
             About
           </a>
         </li>
         <li>
-          <a href="#" class="mr-4 hover:underline md:mr-6">
+          <a href="#" className="mr-4 hover:underline md:mr-6">
             Privacy Policy
           </a>
         </li>
         <li>
-          <a href="#" class="mr-4 hover:underline md:mr-6">
+          <a href="#" className="mr-4 hover:underline md:mr-6">
             Licensing
           </a>
         </li>
         <li>
-          <a href="#" class="hover:underline">
+          <a href="#" className="hover:underline">
             Contact
           </a>
         </li>

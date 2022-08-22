@@ -9,7 +9,7 @@ const style = {
   textFormat: `text-gray-900 whitespace-no-wrap`,
 };
 
-function Content() {
+const Content = () => {
   // fetch data from api
   const [data, setData] = useState([]);
 
