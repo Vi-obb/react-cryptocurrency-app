@@ -11,6 +11,7 @@
  * - Modification    :
  **/
 
+<<<<<<< HEAD
 import React from "react";
 import DisplayBanner from "./DisplayBanner";
 import News from "./News";
@@ -32,6 +33,20 @@ const RightHandSide = () => {
       {news.map((item, i) => (
         <News key={i} title={item.title} url={item.url} source={item.source} />
       ))}
+=======
+import React, { useEffect, useState } from "react";
+import DataLoader from "./DataLoader";
+import DisplayBanner from "./DisplayBanner";
+import News from "./News";
+
+const RightHandSide = () => {
+  return (
+    <>
+      <DataLoader>
+        <DisplayBanner />
+      </DataLoader>
+      <News />
+>>>>>>> 9b9926d81551a4489c6cf2f52acee8a0451a8ae2
     </>
   );
 };
