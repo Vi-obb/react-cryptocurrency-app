@@ -11,13 +11,15 @@
  * - Modification    :
  **/
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import DisplayBanner from "./DisplayBanner";
 import News from "./News";
 import useFetchMktData from "../../hooks/useFetchMktData";
+import useFetchNews from "../../hooks/useFetchNews";
 
 const RightHandSide = () => {
   const { data } = useFetchMktData();
+  const { news } = useFetchNews();
   return (
     <>
       {/* map data for banner */}
@@ -26,7 +28,10 @@ const RightHandSide = () => {
         ongoing={data.ongoing_icos}
         markets={data.markets}
       />
-      <News />
+      {/* map data for news */}
+      {news.map((item, i) => (
+        <News key={i} title={item.title} url={item.url} source={item.source} />
+      ))}
     </>
   );
 };
