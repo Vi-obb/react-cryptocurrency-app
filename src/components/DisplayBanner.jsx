@@ -1,3 +1,15 @@
+/**
+ * @description      :
+ * @author           : Michael
+ * @group            :
+ * @created          : 24/08/2022 - 13:54:21
+ *
+ * MODIFICATION LOG
+ * - Version         : 1.0.0
+ * - Date            : 24/08/2022
+ * - Author          : Michael
+ * - Modification    :
+ **/
 import React from "react";
 
 const style = {
@@ -7,17 +19,15 @@ const style = {
   priceDiv: `font-semibold tracking-wider font-poppins text-lg`,
 };
 
-const DisplayBanner = ({ active, ongoing, markets }) => {
+const DisplayBanner = ({ data }) => {
+  const { active_cryptocurrencies, ongoing_icos, markets } = data || {};
   return (
     <div className={style.wrapper}>
       <div className="text-white">
         <p className={style.priceDiv}>{markets} markets</p>
+        <p className={style.priceDiv}> {ongoing_icos} ICOs</p>
         <p className={style.priceDiv}>
-          {" "}
-          {ongoing} ICOs
-        </p>
-        <p className={style.priceDiv}>
-          {active} Cryptocurrencies
+          {active_cryptocurrencies} Cryptocurrencies
         </p>
       </div>
     </div>

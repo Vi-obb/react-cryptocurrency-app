@@ -2,20 +2,18 @@
  * @description      :
  * @author           : Michael
  * @group            :
- * @created          : 22/08/2022 - 17:27:09
+ * @created          : 24/08/2022 - 13:47:30
  *
  * MODIFICATION LOG
  * - Version         : 1.0.0
- * - Date            : 22/08/2022
+ * - Date            : 24/08/2022
  * - Author          : Michael
  * - Modification    :
  **/
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
-const useFetchMktData = () => {
-  // fetch data for banner
-  const [data, setData] = useState([]);
+const DataLoader = ({ children }) => {
+  const [data, setData] = useState({});
 
   useEffect(() => {
     const results = {
@@ -37,9 +35,17 @@ const useFetchMktData = () => {
         console.error(err);
       });
   }, []);
-  return {
-    data,
-  };
+  return (
+    <>
+      {React.Children.map(children, (child) => {
+        if (React.isValidElement(child)) {
+          return React.cloneElement(child, { data });
+        }
+
+        return child;
+      })}
+    </>
+  );
 };
 
-export default useFetchMktData;
+export default DataLoader;

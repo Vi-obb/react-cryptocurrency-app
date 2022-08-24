@@ -12,20 +12,16 @@
  **/
 
 import React, { useEffect, useState } from "react";
+import DataLoader from "./DataLoader";
 import DisplayBanner from "./DisplayBanner";
 import News from "./News";
-import useFetchMktData from "../../hooks/useFetchMktData";
 
 const RightHandSide = () => {
-  const { data } = useFetchMktData();
   return (
     <>
-      {/* map data for banner */}
-      <DisplayBanner
-        active={data.active_cryptocurrencies}
-        ongoing={data.ongoing_icos}
-        markets={data.markets}
-      />
+      <DataLoader>
+        <DisplayBanner />
+      </DataLoader>
       <News />
     </>
   );
