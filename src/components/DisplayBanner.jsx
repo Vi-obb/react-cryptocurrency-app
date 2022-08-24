@@ -21,7 +21,7 @@ const style = {
 
 const DisplayBanner = ({ data }) => {
   const { active_cryptocurrencies, ongoing_icos, markets } = data || {};
-  return (
+  return data ? (
     <div className={style.wrapper}>
       <div className="text-white">
         <p className={style.priceDiv}>{markets} markets</p>
@@ -31,6 +31,8 @@ const DisplayBanner = ({ data }) => {
         </p>
       </div>
     </div>
+  ) : (
+    <p> Loading </p>
   );
 };
 
