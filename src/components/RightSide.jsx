@@ -26,7 +26,7 @@ const RightHandSide = () => {
         <DisplayBanner />
       </DataLoader>
       {/* map data for news */}
-      {news.map((item, i) => (
+      {news.slice(0,5).map((item, i) => (
         <News key={i} title={item.title} url={item.url} source={item.source} />
       ))}
     </>
