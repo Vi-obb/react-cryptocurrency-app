@@ -18,7 +18,7 @@ const useFetchNews = () => {
             setNews(response.data);
             console.log(response.data);
         }).catch(function (error) {
-            console.error(error);
+            console.error(error); 
         });
     }, []);
 
